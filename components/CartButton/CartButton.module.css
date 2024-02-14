@@ -1,0 +1,20 @@
+.cartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartIcon {
+  display: none;
+}
+.cartLabel {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cartIcon {
+    display: block;
+  }
+  .cartLabel {
+    display: none;
+  }
+}

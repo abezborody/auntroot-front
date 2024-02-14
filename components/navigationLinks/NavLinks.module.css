@@ -4,6 +4,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  color: blue;
+  color: #313131;
   gap: 16px;
+}
+
+.navLinks a:hover {
+  color: #e62547;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
 }

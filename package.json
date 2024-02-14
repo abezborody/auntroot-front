@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.3.0",
+    "@ant-design/nextjs-registry": "^1.0.0",
     "@reatom/core": "^3.6.6",
     "@reatom/npm-react": "^3.8.3",
     "antd": "^5.14.1",
