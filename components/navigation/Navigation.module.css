@@ -1,0 +1,11 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 32px;
+  max-height: 64px;
+  width: 100%;
+  background-color: #fff;
+  color: #313131;
+  border-bottom: 1px solid #00000010;
+}
