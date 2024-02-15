@@ -1,11 +1,9 @@
 .navLinks {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  gap: 32px;
   color: #313131;
-  gap: 16px;
 }
 
 .navLinks a:hover {

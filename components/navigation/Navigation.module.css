@@ -1,12 +1,19 @@
+.navigationWpapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  max-height: 64px;
+  height: 64px;
   width: 100%;
   background-color: #fff;
   color: #313131;
-  border-bottom: 1px solid #00000010;
+  border-bottom: 1px solid #00000020;
+  box-shadow: 0px 2px 4px #00000010;
 }
 .burgerMenu {
   display: none;

@@ -6,13 +6,15 @@ import style from './Navigation.module.css';
 
 export const Navigation = (): JSX.Element => {
   return (
-    <div className={style.navigation}>
-      <div className={style.burgerMenu}>
-        <BurgerMenu />
+    <div className={style.navigationWpapper}>
+      <div className={style.navigation}>
+        <div className={style.burgerMenu}>
+          <BurgerMenu />
+        </div>
+        <Logo />
+        <NavLinks />
+        <CartButton />
       </div>
-      <Logo />
-      <NavLinks />
-      <CartButton />
     </div>
   );
 };

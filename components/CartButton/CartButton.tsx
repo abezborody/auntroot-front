@@ -1,8 +1,12 @@
-import { Button, Badge, Row, Space } from 'antd';
+'use client';
+import { Button, Badge, Space } from 'antd';
 import style from './CartButton.module.css';
 import { ShoppingCartOutlined } from '@ant-design/icons';
+import { useCartStore } from '@/lib/store';
 
 const CartButton = (): JSX.Element => {
+  const cartCounter = useCartStore((state) => state.cartCounter);
+
   return (
     <Button className={style.cartButton} style={{ padding: '0 12px' }}>
       <Space
@@ -21,7 +25,7 @@ const CartButton = (): JSX.Element => {
           <div className={style.cartLabel}>Cart</div>
         </div>
         <Badge
-          count={0}
+          count={cartCounter}
           showZero
           style={{ marginBottom: '2px' }}
           color='#E62547'
