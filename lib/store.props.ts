@@ -1,14 +1,14 @@
 // TODO: cart item interface, add amount
-interface CartItem {}
+import { ProductCardProps } from '@/components/ProductCard/ProductCard.props';
 
 export type State = {
-  cartItems: CartItem[];
+  cartItems: ProductCardProps[];
 };
 // TODO: add to cart an item, if already in cart, increase amount
 // TODO: if decrease and amount is 1, remove from cart
 // TODO: reset == remove all from cart
 export type Actions = {
-  // addItemToCart: (item: CartItem) => void;
+  addItemToCart: (item: ProductCardProps) => void;
   // removeItemFromCart: () => void;
   resetCart: () => void;
 };

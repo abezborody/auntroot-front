@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Logo = (): JSX.Element => {
   return (
     <Link className={style.logo} href={'/'}>
-      <Image width={132} height={44} src={'/logo.png'} alt={'auntroot logo'} />
+      <Image width={44} height={44} src={'/logo.svg'} alt={'auntroot logo'} />
     </Link>
   );
 };

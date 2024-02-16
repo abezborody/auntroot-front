@@ -4,7 +4,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
+}
+
+@media (max-width: 768px) {
+  .main {
+    min-height: calc(100vh - 56px);
+  }
 }
 
 .grid {

@@ -7,6 +7,11 @@ export const initialState: State = {
 
 export const useCartStore = create<Store>()((set) => ({
   cartItems: initialState.cartItems,
+  addItemToCart: (item) => {
+    set((state) => ({
+      cartItems: [...state.cartItems, item],
+    }));
+  },
   resetCart: () => {
     set(initialState);
   },

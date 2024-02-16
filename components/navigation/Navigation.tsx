@@ -6,7 +6,7 @@ import style from './Navigation.module.css';
 
 export const Navigation = (): JSX.Element => {
   return (
-    <div className={style.navigationWpapper}>
+    <header className={style.navigationWpapper}>
       <div className={style.navigation}>
         <div className={style.burgerMenu}>
           <BurgerMenu />
@@ -15,6 +15,6 @@ export const Navigation = (): JSX.Element => {
         <NavLinks />
         <CartButton />
       </div>
-    </div>
+    </header>
   );
 };
